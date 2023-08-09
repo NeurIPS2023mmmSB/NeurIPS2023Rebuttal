@@ -31,7 +31,7 @@ python main.py --problem-name petal --dir NeurIPS/petal --log-tb --num-stage 30 
 ```bash
 python main.py --problem-name RNAsc --dir NeurIPS/RNA-seed99 --log-tb --seed 99  --use-amp --num-itr 2000
 ```
-**Memo: The results in the paper sould be reproduced by around 2-3 stage of Bregman Iteration. (Approximately 44mins on one RTX 3090 Ti as been reported in the rebuttal.)**
+**Memo: The results in the paper sould be reproduced by around 2-3 stage of Bregman Iteration. (Approximately 44mins on one RTX 3090 Ti as being reported in the rebuttal.)**
 
 **However, the results sould be better than all the baselines in the 1st Bregman Iteration.**
 
