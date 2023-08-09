@@ -36,7 +36,7 @@ python main.py --problem-name RNAsc --dir NeurIPS/RNA-seed99 --log-tb --seed 99 
 ```
 **Memo: The results in the paper should be reproduced by around 2-3 stage of Bregman Iteration. (Approximately 44mins on one RTX 3090 Ti as being reported in the rebuttal.)**
 
-**Meanwhile, the results should be better than all the baselines in the 1st Bregman Iteration.**
+**Meanwhile, the results should be better than all the baselines after 1st Bregman Iteration optimization.**
 
 ****
 # Where Can I find the results?
