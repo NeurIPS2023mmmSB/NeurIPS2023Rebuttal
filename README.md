@@ -1,7 +1,7 @@
 **PyTorch implementation of the paper 
 "_<ins>**D**</ins>eep <ins>**M**</ins>omentum  Multi-Marginal <ins>**S**</ins>chrödinger <ins>**B**</ins>ridge_  (**DMSB**)"**
 
-**For NeurIPS 2023 Rebuttal Only. The code is not finally cleaned up, but the results are reproduciable by the following command lines.**
+**For NeurIPS 2023 Rebuttal Only. The code is not finally cleaned up, but the results are reproducible by the following command lines.**
 
 
 # Installation
@@ -12,6 +12,9 @@ conda env create --file requirements.yaml python=3.8
 conda activate DMSB
 ```
 
+## RNAsc data Preparation
+Download the RNAsc data from [here](https://github.com/KrishnaswamyLab/TrajectoryNet/blob/master/data/eb_velocity_v5.npz), and create a folder `data/` and put the downloaded dataset `eb_velocity_v5.npz` into `data/`. 
+
 # Reproducing the result in the paper
 ****
 
@@ -19,21 +22,21 @@ conda activate DMSB
 ```bash
 python main.py --problem-name gmm --dir NeurIPS/gmm --log-tb --use-amp
 ```
-**Memo: The results in the paper sould be reproduced by around 6 stage of Bregman Iteration.**
+**Memo: The results in the paper should be reproduced by around 6 stage of Bregman Iteration.**
 
 ### Petal
 ```bash
 python main.py --problem-name petal --dir NeurIPS/petal --log-tb --num-stage 30 --use-amp --seed 99
 ```
-**Memo: The results in the paper sould be reproduced by around 17 stage of Bregman Iteration.**
+**Memo: The results in the paper should be reproduced by around 17 stage of Bregman Iteration.**
 
 ### RNAsc
 ```bash
 python main.py --problem-name RNAsc --dir NeurIPS/RNA-seed99 --log-tb --seed 99  --use-amp --num-itr 2000
 ```
-**Memo: The results in the paper sould be reproduced by around 2-3 stage of Bregman Iteration. (Approximately 44mins on one RTX 3090 Ti as being reported in the rebuttal.)**
+**Memo: The results in the paper should be reproduced by around 2-3 stage of Bregman Iteration. (Approximately 44mins on one RTX 3090 Ti as being reported in the rebuttal.)**
 
-**Meanwhile, the results sould be better than all the baselines in the 1st Bregman Iteration.**
+**However, the results should be better than all the baselines in the 1st Bregman Iteration.**
 
 ****
 # Where Can I find the results?
